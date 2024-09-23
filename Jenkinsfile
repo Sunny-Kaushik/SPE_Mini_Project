@@ -5,7 +5,7 @@ pipeline {
         DOCKER_IMAGE = 'sunnykaushik007/calculator' // Replace with your Docker Hub repo
         DOCKER_TAG = 'latest'
         DOCKER_HUB_CREDS = 'dockerHubCredentials'  // Jenkins credentials ID for Docker Hub`
-        PATH = "/opt/homebrew/bin:$PATH" 
+        PATH = "/opt/homebrew/bin:$PATH:/usr/local/bin" 
     }
 
     
