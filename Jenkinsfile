@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run Maven tests
-                sh 'mvn clean test'
+                sh '/opt/homebrew/bin/mvn clean test'
             }
         }
 
