@@ -1,0 +1,20 @@
+- name: Deploy Calculator App
+
+  hosts: myhosts
+
+  tasks:
+    - name: Remove old containers
+      docker_container:
+        name: calculator
+        state: absent
+        force_kill: yes
+
+    - name: Deploy Calculator App
+      # run in background & interactive
+      docker_container:
+        name: calculator
+        image: sunnykaushik007/calculator
+        state: started
+        restart: yes
+        interactive: yes
+        detach: yes
