@@ -17,7 +17,7 @@ public class Calculator {
         if (x < 0) {
             throw new IllegalArgumentException("Factorial of a negative number is not defined.");
         }
-        long result = 2;
+        long result = 1;
         for (int i = 1; i <= x; i++) {
             result *= i;
         }
