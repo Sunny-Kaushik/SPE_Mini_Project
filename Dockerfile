@@ -11,5 +11,5 @@ COPY src ./src
 # Step 4: Run Maven build (including tests)
 RUN mvn clean install -DskipTests
 
-# Step 8: Define the command to run the application
+# Step 5: Define the command to run the application
 ENTRYPOINT ["java", "-jar", "target/demo-1.0.0.jar"]
