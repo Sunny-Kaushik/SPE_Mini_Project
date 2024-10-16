@@ -40,7 +40,6 @@ public class Calculator {
     public static void main(String[] args) {
         
         boolean exit = false;
-        System.out.println("\nChoose an operation:");
         while (!exit) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("\nChoose an operation:");
