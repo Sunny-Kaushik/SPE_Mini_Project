@@ -38,10 +38,11 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        
         boolean exit = false;
-
+        System.out.println("\nChoose an operation:");
         while (!exit) {
+            Scanner scanner = new Scanner(System.in);
             System.out.println("\nChoose an operation:");
             System.out.println("1. Square Root (√x)");
             System.out.println("2. Factorial (x!)");
@@ -99,8 +100,9 @@ public class Calculator {
                 default:
                     System.out.println("Invalid choice. Please enter a number between 1 and 5.");
             }
+            scanner.close();
         }
 
-        scanner.close();
+        
     }
 }
