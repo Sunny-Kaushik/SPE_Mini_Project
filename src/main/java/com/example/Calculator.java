@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Calculator {
 
     // Square root function: √x
-    public static double squareRoot(double x) {
-        if (x < 0) {
+    public static double squareRoot(double y) {
+        if (y < 0) {
             throw new IllegalArgumentException("Square root of a negative number is not defined.");
         }
-        return Math.sqrt(x);
+        return Math.sqrt(y);
     }
 
     // Factorial function: x!
